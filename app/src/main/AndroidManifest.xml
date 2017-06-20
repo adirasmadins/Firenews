@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="io.github.h911002.firenews">
+
+    <!-- please add permission use alphabet order -->
+    <!-- 1 一般权限： -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.baidao.futures"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 2 特殊权限： -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 3危险权限：(运行时权限) -->
+    <!-- Phone组 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- CAMERA 相机组 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- Location  定位组 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- STORAGE  存储组 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".module.main.MainActivity">
+        </activity>
+        <activity android:name=".module.main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".support.WebViewActivity">
+        </activity>
+        <activity android:name=".module.login.LoginActivity">
+        </activity>
+        <activity android:name=".module.me.setting.SettingActivity">
+        </activity>
+        <activity android:name=".module.me.earning.EarningActivity">
+        </activity>
+        <activity android:name=".module.login.RegisterActivity">
+        </activity>
+        <activity android:name=".module.me.rank.RankActivity">
+        </activity>
+        <activity android:name=".module.me.withdraw.WithdrawActivity">
+        </activity>
+        <activity android:name=".module.me.bind.phone.BindPhoneActivity">
+        </activity>
+        <activity android:name=".module.me.presenter.PresenterCoinActivity">
+        </activity>
+        <activity android:name=".module.me.invitation.InvitationActivity">
+        </activity>
+        <activity android:name=".module.me.withdraw.WithdrawDetailActivity">
+        </activity>
+    </application>
+
+</manifest>

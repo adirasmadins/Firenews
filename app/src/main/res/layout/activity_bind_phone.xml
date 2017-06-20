@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="io.github.h911002.firenews.module.me.bind.phone.BindPhoneActivity">
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_no_solid_grey_stroke_oval"
+        android:drawableLeft="@mipmap/register_shoujihao"
+        android:hint="输入手机号码"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal">
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_no_solid_grey_stroke_oval"
+            android:drawableLeft="@mipmap/register_yanzhengma"
+            android:hint="输入验证码"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btn_blue_oval"
+            android:padding="3dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_xnormal"
+        android:background="@drawable/btn_blue_oval"
+        android:text="提交绑定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxnormal"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="view_pager_id" />
+    <item type="id" name="indicator_bar_id" />
+    <item type="id" name="indicator_wrapper" />
+    <item type="id" name="arrow_down_id"/>
+</resources>

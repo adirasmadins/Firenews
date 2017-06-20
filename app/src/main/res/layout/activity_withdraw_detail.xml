@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:context="io.github.h911002.firenews.module.me.withdraw.WithdrawDetailActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:overScrollMode="never"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/margin_padding_xnormal"
+        android:background="@drawable/btn_blue_oval"
+        android:text="确认提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="温馨提示"
+        android:textColor="@color/text_color_default"/>
+</LinearLayout>

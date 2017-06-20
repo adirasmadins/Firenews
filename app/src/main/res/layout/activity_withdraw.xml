@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_grey"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_xnormal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_solid_grey_stroke_oval"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_padding_xnormal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/margin_padding_xxnormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_normal"
+                            android:drawableLeft="@mipmap/me_jinbi"
+                            android:drawablePadding="@dimen/margin_padding_tiny"
+                            android:gravity="center_vertical"
+                            android:text="我的金币"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/margin_padding_xxnormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_normal"
+
+                            android:drawableLeft="@mipmap/me_yuer"
+                            android:drawablePadding="@dimen/margin_padding_tiny"
+                            android:gravity="center_vertical"
+                            android:text="我的余额"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_withdraw"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/withdraw"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_xnormal"/>
+
+                    <View
+                        android:layout_width="@dimen/common_line_width"
+                        android:layout_height="45dp"
+                        android:background="@color/stoke_grey"/>
+
+                    <TextView
+                        android:id="@+id/tv_exchange"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/exchange"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_xnormal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_solid_grey_stroke_oval"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日金币兑换比例:"
+                        android:textSize="@dimen/text_size_xnormal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_padding_small"
+                        android:text="0=0元"
+                        android:textColor="@color/bg_yellow"
+                        android:textSize="@dimen/text_size_xnormal"/>
+                </LinearLayout>
+
+                <include layout="@layout/view_line"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="金币兑换余额的兑换非固定比例,是根据昨日平台广告总收益除以昨日阅读文章产生金币总额"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="温馨提示"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/bg_white_solid_grey_stroke_oval"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="已体现用户"/>
+
+                <include layout="@layout/view_line"/>
+
+                <io.github.h911002.firenews.module.me.MenuListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"></io.github.h911002.firenews.module.me.MenuListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

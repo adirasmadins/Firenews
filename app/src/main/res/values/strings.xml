@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">火速新闻</string>
+
+    <string name="home_tag">首页</string>
+    <string name="video_tag">视频</string>
+    <string name="coin_tag">金币屋</string>
+    <string name="me_tag">我的</string>
+
+    <string name="withdraw">提现</string>
+    <string name="exchange">兑换金币</string>
+</resources>

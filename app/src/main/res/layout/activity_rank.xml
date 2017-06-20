@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_grey"
+              android:orientation="vertical"
+              tools:context=".module.me.rank.RankActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_padding_xnormal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_padding_xxnormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:drawableLeft="@mipmap/rank_shouru"
+                android:drawablePadding="@dimen/margin_padding_tiny"
+                android:gravity="center_vertical"
+                android:text="收入排名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_padding_xxnormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+
+                android:drawableLeft="@mipmap/rank_yaoqing"
+                android:drawablePadding="@dimen/margin_padding_tiny"
+                android:gravity="center_vertical"
+                android:text="邀请排名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_padding_xxnormal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:drawableLeft="@mipmap/rank_zengsong"
+                android:drawablePadding="@dimen/margin_padding_tiny"
+                android:gravity="center_vertical"
+                android:text="赠送金币排名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_line"/>
+
+    <io.github.h911002.firenews.support.view.slidingtab.SlidingTabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:indicatorContentPaddingBottom="10dp"
+        app:indicatorContentPaddingTop="10dp"
+        app:indicatorHeight="1.8dp"
+        app:indicatorLineColor="@color/colorPrimary"
+        app:indicatorTextColor="@color/colorPrimary"/>
+
+    <include layout="@layout/view_line"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>
